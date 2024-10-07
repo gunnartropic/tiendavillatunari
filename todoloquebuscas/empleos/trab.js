@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
      // aquí se agregan los nuevos tipos
 const Servicios_profecionalesJobs = document.querySelectorAll('.job.Servicios_profecionales').length;
 document.getElementById('Servicios_profecionales-count').textContent = `(${Servicios_profecionalesJobs})`;
+const albañilJobs = document.querySelectorAll('.job.albañil').length;
+document.getElementById('albañil-count').textContent = `(${albañilJobs})`;
 // fin de los nuevos tipos
   }
   
