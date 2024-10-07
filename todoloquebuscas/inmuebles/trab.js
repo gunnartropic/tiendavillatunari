@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
-
-    // fin de los nuevos tipos
+const EdificioJobs = document.querySelectorAll('.job.Edificio').length;
+document.getElementById('Edificio-count').textContent = `(${EdificioJobs})`;
+const Lote/TerrenoJobs = document.querySelectorAll('.job.Lote/Terreno').length;
+document.getElementById('Lote/Terreno-count').textContent = `(${Lote/TerrenoJobs})`;
+// fin de los nuevos tipos
   }
   
   function filterJobs(type) {
