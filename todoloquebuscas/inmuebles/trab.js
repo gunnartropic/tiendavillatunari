@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
      // aquí se agregan los nuevos tipos
 const EdificioJobs = document.querySelectorAll('.job.Edificio').length;
 document.getElementById('Edificio-count').textContent = `(${EdificioJobs})`;
-const Lote/TerrenoJobs = document.querySelectorAll('.job.Lote/Terreno').length;
-document.getElementById('Lote/Terreno-count').textContent = `(${Lote/TerrenoJobs})`;
+const LoteJobs = document.querySelectorAll('.job.Lote').length;
+document.getElementById('Lote-count').textContent = `(${LoteJobs})`;
+const CasaJobs = document.querySelectorAll('.job.Casa').length;
+document.getElementById('Casa-count').textContent = `(${CasaJobs})`;
 // fin de los nuevos tipos
   }
   
