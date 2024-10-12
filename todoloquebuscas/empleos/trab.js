@@ -104,6 +104,8 @@ const albañilJobs = document.querySelectorAll('.job.albañil').length;
 document.getElementById('albañil-count').textContent = `(${albañilJobs})`;
 const ElectricistaJobs = document.querySelectorAll('.job.Electricista').length;
 document.getElementById('Electricista-count').textContent = `(${ElectricistaJobs})`;
+const AmplificaciónJobs = document.querySelectorAll('.job.Amplificación').length;
+document.getElementById('Amplificación-count').textContent = `(${AmplificaciónJobs})`;
 // fin de los nuevos tipos
   }
   
@@ -191,4 +193,10 @@ document.getElementById('Electricista-count').textContent = `(${ElectricistaJobs
     if (linkPath === currentPath) {
       link.classList.add('active');
     }
-  });
+  });// aquí se agregan los nuevos tipos
+const Servicios_profecionalesJobs = document.querySelectorAll('.job.Servicios_profecionales').length;
+document.getElementById('Servicios_profecionales-count').textContent = `(${Servicios_profecionalesJobs})`;
+const albañilJobs = document.querySelectorAll('.job.albañil').length;
+document.getElementById('albañil-count').textContent = `(${albañilJobs})`;
+const ElectricistaJobs = document.querySelectorAll('.job.Electricista').length;
+document.getElementById('Electricista-count').textContent = `(${ElectricistaJobs})`;
