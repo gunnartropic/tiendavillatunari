@@ -189,4 +189,8 @@ document.getElementById('Electricista_Plomero-count').textContent = `(${Electric
     if (linkPath === currentPath) {
       link.classList.add('active');
     }
-  });
+  });// aquí se agregan los nuevos tipos
+const Servicios_profecionalesJobs = document.querySelectorAll('.job.Servicios_profecionales').length;
+document.getElementById('Servicios_profecionales-count').textContent = `(${Servicios_profecionalesJobs})`;
+const Electricista_PlomeroJobs = document.querySelectorAll('.job.Electricista_Plomero').length;
+document.getElementById('Electricista_Plomero-count').textContent = `(${Electricista_PlomeroJobs})`;
