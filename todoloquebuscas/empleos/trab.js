@@ -12,8 +12,6 @@ const OdontologoJobs = document.querySelectorAll('.job.Odontologo').length;
 document.getElementById('Odontologo-count').textContent = `(${OdontologoJobs})`;
 const GastronomíaJobs = document.querySelectorAll('.job.Gastronomía').length;
 document.getElementById('Gastronomía-count').textContent = `(${GastronomíaJobs})`;
-const freelanceJobs = document.querySelectorAll('.job.freelance').length;
-document.getElementById('freelance-count').textContent = `(${freelanceJobs})`;
 // fin de los nuevos tipos
   }
   
