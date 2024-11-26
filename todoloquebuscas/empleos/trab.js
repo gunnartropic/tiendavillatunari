@@ -12,6 +12,10 @@ const OdontologoJobs = document.querySelectorAll('.job.Odontologo').length;
 document.getElementById('Odontologo-count').textContent = `(${OdontologoJobs})`;
 const GastronomíaJobs = document.querySelectorAll('.job.Gastronomía').length;
 document.getElementById('Gastronomía-count').textContent = `(${GastronomíaJobs})`;
+const freelanceJobs = document.querySelectorAll('.job.freelance').length;
+document.getElementById('freelance-count').textContent = `(${freelanceJobs})`;
+const parttimeJobs = document.querySelectorAll('.job.parttime').length;
+document.getElementById('parttime-count').textContent = `(${parttimeJobs})`;
 // fin de los nuevos tipos
   }
   
