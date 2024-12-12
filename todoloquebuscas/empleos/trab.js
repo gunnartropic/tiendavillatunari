@@ -16,6 +16,8 @@ const freelanceJobs = document.querySelectorAll('.job.freelance').length;
 document.getElementById('freelance-count').textContent = `(${freelanceJobs})`;
 const parttimeJobs = document.querySelectorAll('.job.parttime').length;
 document.getElementById('parttime-count').textContent = `(${parttimeJobs})`;
+const MecánicoJobs = document.querySelectorAll('.job.Mecánico').length;
+document.getElementById('Mecánico-count').textContent = `(${MecánicoJobs})`;
 // fin de los nuevos tipos
   }
   
