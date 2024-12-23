@@ -589,20 +589,20 @@ html {
 .flip-card-front.tarjeta-2 {
   background: 
       linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../imagenes/sept.svg") center/contain no-repeat,
+      url("../imagenes/vill.jpg") center/contain no-repeat,
       linear-gradient(120deg, #222 60%, #333 88%, #444 40%, #555 48%);
 }
 
 .flip-card-front.tarjeta-3 {
   background: 
       linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../imagenes/ivir.svg") center/contain no-repeat,
+      url("../imagenes/dinkon.jpeg") center/contain no-repeat,
       linear-gradient(120deg, #222 60%, #333 88%, #444 40%, #555 48%);
 }
 .flip-card-front.tarjeta-4 {
   background: 
       linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../imagenes/ledez.svg") center/contain no-repeat,
+      url("../imagenes/efm.png") center/contain no-repeat,
       linear-gradient(120deg, #222 60%, #333 88%, #444 40%, #555 48%);
 }
 
