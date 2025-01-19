@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
-const AmplificaciónJobs = document.querySelectorAll('.job.Amplificación').length;
-document.getElementById('Amplificación-count').textContent = `(${AmplificaciónJobs})`;
 const Servicios_profecionalesJobs = document.querySelectorAll('.job.Servicios_profecionales').length;
 document.getElementById('Servicios_profecionales-count').textContent = `(${Servicios_profecionalesJobs})`;
 const TécnicoJobs = document.querySelectorAll('.job.Técnico').length;
