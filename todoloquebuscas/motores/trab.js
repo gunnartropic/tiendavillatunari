@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
-const MotosJobs = document.querySelectorAll('.job.Motos').length;
-document.getElementById('Motos-count').textContent = `(${MotosJobs})`;
+const AutomóvilJobs = document.querySelectorAll('.job.Automóvil').length;
+document.getElementById('Automóvil-count').textContent = `(${AutomóvilJobs})`;
+const Camiones_sisternasJobs = document.querySelectorAll('.job.Camiones_sisternas').length;
+document.getElementById('Camiones_sisternas-count').textContent = `(${Camiones_sisternasJobs})`;
 // fin de los nuevos tipos
   }
   
