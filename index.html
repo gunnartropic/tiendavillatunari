@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/normalize.css"> --> 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/hefoo.css">
    <!-- Favicon -->
    <link rel="icon" href="https://tiendavillatunari.com/imagenes/logpng.svg" type="image/svg+xml">
    <link rel="icon" href="https://tiendavillatunari.com/imagenes/logpng.png" type="image/png">
@@ -45,40 +47,65 @@
 </head>
 
 <body>
-
-    <div class="night"></div>
-    <header class="encabezado">
-        <div class="contenedor-navegacion">
-          <div class="contenido-navegacion contenedor">
-            <div class="logo">
-              <h2><span class="verde">Villa Tunari</span></h2>
-            </div>
-            <nav class="navegacion ocultar">
-                <a href="https://tiendaivirgarzama.com">Tienda Ivirgarzama</a>
-                <a href="https://tiendachimore.com">Tienda Chimoré</a>
-                <a href="https://tiendashinaota.com">Tienda Shinahota</a>
-                <a href="https://tiendaentrerios.com">Tienda Entre Ríos</a>
-              
-            </nav>
-            <div class="hamburguesa">
-              <span></span><span></span><span></span>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <!-- Navigation -->
+    <nav>
+        <div class="wrapper">
+            <div class="logo">Villa Tunari</div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="https://tiendachimore.com">Chimoré</a></li>
+                <li><a href="https://tiendashinaota.com">Shinahota</a></li>
+                <li>
+                    <a href="https://tiendaentrerios.com">Entre Ríos</a>
+                   
+                </li>
+                <li>
+                    <a href="https://tiendaivirgarzama.com">Ivirgarzama</a>
+                   
+                </li>
+                <li><a href="#footer">Contáctanos</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-      </header>
-    
-      <div class="hero">
-        <h1>Sumérgete en la naturaleza y la aventura de Villa Tunari,<br>
-             la puerta al paraíso tropical de Cochabamba.</h1>
-        <h2>Publica tu anuncio gratis: 75922126</h2>
-      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Bienvenidos al Trópico</h1>
+                    <p>Naturaleza y paisajes inolvidables</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Vive la experiencia del Trópico</h1>
+                    <p>Emocionantes aventuras al aire libre</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Turismo en Villa Tunari</h1>
+                    <p>Aventura, Ríos y Belleza Natural</p>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
     <section id="nuestros-programas">
-        <div class="container">
-            <h2>Todo lo que buscas</h2>
+        <div class="containercard">
+            <h2>Anuncios Publicados</h2>
             <div class="programas">
                 <div class="carta">
-                    <h3>Lotes Chacos Inmuebles</h3>
+                    <h3>Inmuebles</h3>
                     <button onclick="location.href='todoloquebuscas/inmuebles/inmuebles.html'"><span>+info</span></button>
                 </div>
                 <div class="carta">
@@ -97,119 +124,131 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about-us" class="about-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Visita Villa Tunari</h2>
+            <p class="section-subtitle fade-in-up">¡Descubre todo lo que Villa Tunari tiene para ofrecer!</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Sumérgete en la naturaleza y la aventura de Villa Tunari,
+                        la puerta al paraíso tropical de Cochabamba.
+                    </p>
+                    <h2>Fincas y Plantaciones</h2>
+                    <p>
+                        En Shinaota y sus alrededores hay diversas fincas y plantaciones de coca, cacao y frutas tropicales.
+                         Algunas de estas fincas ofrecen tours donde puedes aprender sobre los procesos de cultivo y producción. 
+                    </p>
+                  <!--   <h2>Visión</h2>
+                    <p>
+                        Ser reconocidos como un centro de excelencia educativa que inspira una
+                        pasión permanente por el aprendizaje y
+                        prepara a los estudiantes para hacer contribuciones significativas a la sociedad.
+                    </p> -->
+
+                </div>
+                <div class="about-image">
+                    <img src="imagenes/mad.webp" alt="Puerto Villarroel" id="campus-image">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <h2 class="section-title">Anuncios Destacados</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="imagenes/rect551.png" alt="Don king"
+                    class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Din Kong Resort Park</h3>
+                    <p class="card-text">Parque privado de turismo, aventuras aéreas extremas y acuáticos.
+                    </p>
+                    <a href="https://www.facebook.com/cupemundoacuatico" class="card-button">Más información</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/esfm12.png" alt="E.S.F.M."
+                    class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Clínica Ledezma </h3>
+                    <p class="card-text">Clínica de 2do nivel. Atención las 24 horas.</p>
+                    <a href="https://www.facebook.com/profile.php?id=61564378648418" class="card-button">Más información</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/rect291.png" alt="hospital"
+                    class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Parque Machía </h3>
+                    <p class="card-text"> Refugio de animales silvestres en el país, tiene más de 500 animales.</p>
+                    <a href="https://www.facebook.com/profile.php?id=100095613547824&mibextid=LQQJ4d" class="card-button">Más información</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
    
 
-    <div class="contenedor-nosotros contenedor">
-        <div class="texto-nosotros">
-            <h1>Turismo </h1>
-            <h2> Din Kong Resort Park</h2>
-            <p>  Este impresionante parque temático, te transportará a 
-                un mundo prehistórico con más de 30 esculturas de dinosaurios a tamaño real. 
-                Disfruta de sus amplias áreas verdes, laguna y playa artificial, 
-                piscinas, cabañas, puentes colgantes y rutas para ciclismo. Ideal para toda la familia.
-                <a href="https://gonnar-maker.github.io/index.html" class="external-link">Visitar</a>
-            </p>
-            <h2> Parque Machía</h2>
-            <p>El Parque Machía es el primer refugio para animales silvestres en el país,
-                 tiene más de quinientos animales, te ofrece un recorrido de 5 km por el bosque tropical,
-                puente colgante y pequeñas cascadas.
-            </p>
-            
-        </div>
-        <div class="imagenes-nosotros">
-            <div class="imagen1">
-                <img data-src="imagenes/shinaota4.webp" alt="mujer comiendo pizza">
-                <img data-src="imagenes/villat1.webp" alt="mujer comiendo pizza">
-            </div>
-            <div class="imagenes2">
-                <img data-src="imagenes/villat3.webp" alt="mujeres comiendo pizza">
-                <img data-src="imagenes/villat2.webp" alt="plato con pasta">
-            </div>
-        </div>
-    </div>
-    <section id="contacivi">
-        <h2>Contactos </h2>
-    <div class="container">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front tarjeta-1">
-                    <p class="title">Hostal Mirador</p>
-                    <p></p>
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-column">
+                   <img src="imagenes/logpng.svg" class="logo">
                 </div>
-                <div class="flip-card-back">
-                    <p class="title">Contáctanos</p>
-                    <p>75475435</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front tarjeta-2">
-                    <p class="title">Hospital Villa Tunari </p>
-                    <p></p>
-                </div>
-                <div class="flip-card-back">
-                    <p class="title">Contáctanos</p>
-                    <p>hospitalvillatunari<br>.cbba@gmail.com</p>
-                    <p>71490001</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front tarjeta-3">
-                    <p class="title">Din Kong Resort Park</p>
-                    <p>Donde la Aventura Cobra Vida</p>
-                </div>
-                <div class="flip-card-back">
-                    <p class="title">Contáctanos</p>
-                    <p>73999995</p>
-                    <p>67420317</p>
-                    <p>  <a href="https://gonnar-maker.github.io/index.html" class="external-link">Visitar</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front tarjeta-4">
-                    <p class="title">ESFM De Educación Física Y Deporte "Simón Rodríguez" U.A. Villa Tunari </p>
-                    <p></p>
-                </div>
-                <div class="flip-card-back">
-                    <p class="title">Contáctanos</p>
-                    <p>ua_vtunari@gmail.com</p>
-                    <p>71108183</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
- 
+                <div class="footer-column">
+                    <h3>Visítanos</h3>
+                    <ul>
+                        <li><a href="https://tiendachimore.com">Tienda Chimoré</a></li>
+                        <li><a href="https://tiendaentrerios.com">Tienda Entre Ríos</a></li>
+                        <li><a href="https://tiendavillatunari.com">Tienda Villa Tunari</a></li>
+                        <li><a href="https://tiendashinaota.com">Tienda Shinahota</a></li>
+                    </ul>
+                </div>
 
-    
-<div class="pie-pagina">
-    <div class="contenedor-piepagina">
-        <img data-src="imagenes/logpng.svg" alt="Digital tropic" class="logo">
-        <div class="info">
-            <h3>Encuentra tu anuncio</h3>
-            <h3>Publica tu anuncio</h3>
-            <p>62625521</p>
+                <div class="footer-column">
+                    <h3>Contactanos</h3>
+                    <p>Conectemos el Trópico<br>
+                        Publica tu anuncio<br>
+                        Celular: 62625521<br>
+                        Gmail: digitaltropic66@gmail.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Ivirgarzama-Contactos</h3>
+                    <p>Hospital: 72214361-72738461</p>
+                    <p>Policia:</p>
+
+                      <!--   <div class="social-icons">
+                            <a href="https://www.facebook.com/tuusuario" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/tuusuario" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@tuusuario" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div> -->
+                </div>
+
+
+
+            </div>
         </div>
-        <div class="info">
-            <h3>Visita nuestras tiendass</h3>
-            <p>
-            <a href="https://tiendaivirgarzama.com" >Tienda Ivirgarzama</a>
-            <a href="https://tiendachimore.com" >Tienda Chimoré</a>
-            <a href="https://tiendashinaota.com" >Tienda Shinahota</a>
-            <a href="https://tiendaentrerios.com" >Tienda Entre Ríos</a>
-        </p>
-        </div>
-    </div>
-</div>
+    </footer>
     
     <script src="js/app.js"></script>
-    <script src="js/fondo.js"></script>
+    <!-- <script src="js/fondo.js"></script> -->
 
 </body>
 
